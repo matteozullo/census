@@ -3,12 +3,12 @@ from setuptools import setup, find_packages
 setup(
     name="census",  # Package name
     version="0.1",
-    packages=find_packages(),  # Automatically find packages in the repo
+    packages=find_packages(),
     install_requires=[
-        "geopandas",  # Package for geospatial data
-        "us",         # Package for US-specific information
-        "typing",     # Type hinting library (if needed for compatibility)
-    ],  # Add dependencies here
+        'requests',  # Add requests here
+        'geopandas',  # Assuming you also need geopandas
+        'us',  # and any other dependencies
+    ],
     author="Your Name",
     description="A package for working with Census data",
     url="https://github.com/matteozullo/Census",
