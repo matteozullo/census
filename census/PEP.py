@@ -2,6 +2,7 @@ from typing import Dict
 import geopandas as gpd
 import us
 from io import BytesIO
+import requests
 
 def pull_fips2state(fips2state=None):
     """
