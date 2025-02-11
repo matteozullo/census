@@ -5,9 +5,10 @@ setup(
     version="0.1",
     packages=find_packages(),
     install_requires=[
-        'requests',  # Add requests here
-        'geopandas',  # Assuming you also need geopandas
-        'us',  # and any other dependencies
+        'requests',  # For making HTTP requests
+        'geopandas',  # For geographic data processing
+        'us',  # For handling US state data
+        'pandas',  # For data manipulation
     ],
     author="Your Name",
     description="A package for working with Census data",

@@ -3,6 +3,7 @@ import geopandas as gpd
 import us
 from io import BytesIO
 import requests
+import pandas as pd
 
 def pull_fips2state(fips2state=None):
     """
