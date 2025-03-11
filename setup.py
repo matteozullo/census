@@ -12,7 +12,7 @@ setup(
     ],
     author="Your Name",
     description="A package for working with Census data",
-    url="https://github.com/matteozullo/Census",
+    url="https://github.com/matteozullo/census",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
