@@ -8,19 +8,6 @@ from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 import numpy as np
 
-def clean_numeric(x):
-    """Helper function to clean numeric values"""
-    if pd.isna(x):
-        return np.nan
-    if isinstance(x, str):
-        x = x.replace(',', '').replace(' ', '')
-        if x in ['*', '**', '-', 'S', 'N']:
-            return np.nan
-    try:
-        return int(float(x))  # Convert to float first, then to int
-    except:
-        return np.nan
-
 def pull_oews_by_ind(year: int, type: str = "ind") -> pd.DataFrame:
     """
     Downloads QCEW "National industry-specific and by ownership" data table.
